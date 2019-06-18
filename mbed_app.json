@@ -35,6 +35,7 @@
             "target.extra_labels_add": ["ESP32AT_BLE"]
         },
         "GR_LYCHEE": {
+            "target.device_has_remove": ["TRNG"],
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"]
         },

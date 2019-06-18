@@ -20,11 +20,6 @@
 
 #include "Esp32AtBLE.h"
 
-#if defined(TARGET_GR_LYCHEE)
-#undef DEVICE_TRNG
-#define DEVICE_TRNG 0
-#endif
-
 #ifndef RANDOM_SEED_AD_PIN
 #define RANDOM_SEED_AD_PIN  A0
 #endif

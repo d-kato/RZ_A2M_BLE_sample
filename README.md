@@ -52,56 +52,9 @@ Please refer to the following.
 https://github.com/d-kato/RZ_A2M_Mbed_samples
 
 
-## How to update the firmware of Pmod ESP32 to "AT version:1.1.3.0"
-
-Write the following firmware to your board using custom boot loader:  
-``RZ_A2M_BLE_sample/docs/serial_bridge/RZ_A2M_EVB_EPS32_Serial_Bridge_application.bin``  
-
-Connection:  
-![](docs/img/pin_setting_fw_update.png)  
-Turn on SW1-2 of Pmod ESP32.  
-
-Download the ESP32 firmware:  
-https://www.espressif.com/en/support/download/at
-
-Espressif’s official Flash Download Tools:  
-http://espressif.com/en/support/download/other-tools?keys=&field_type_tid%5B%5D=13
-
-![](docs/img/esp32_tool_1.jpg)  
-
-![](docs/img/esp32_tool_2.png)  
-
-The firmware settings are described in ``ESP32_AT_V1.1.3/download.config``.  
-In the case of ESP32_AT_V1.1.3, the settings are as follows.  
-* SPI SPEED : ``40MHz``
-* SPI MODE : ``DIO``
-* FLASH SIZE : ``32Mbit``
-* COM : Set your board COM.
-* BAUD : ``576000`` (If a write error occurs, try again with the smaller value.)  
-
-|Path                                   |offset  |
-|:--------------------------------------|:-------|
-|bootloader/bootloader.bin              |0x1000  |
-|at_customize.bin                       |0x20000 |
-|customized_partitions/ble_data.bin     |0x21000 |
-|customized_partitions/server_cert.bin  |0x24000 |
-|customized_partitions/server_key.bin   |0x26000 |
-|customized_partitions/server_ca.bin    |0x28000 |
-|customized_partitions/client_cert.bin  |0x2a000 |
-|customized_partitions/client_key.bin   |0x2c000 |
-|customized_partitions/client_ca.bin    |0x2e000 |
-|customized_partitions/factory_param.bin|0x30000 |
-|phy_init_data.bin                      |0xf000  |
-|esp-at.bin                             |0x100000|
-|partitions_at.bin                      |0x8000  |
-
-Procedure:  
-1. Connect the ``USB-F`` connector to your PC using a USB cable.  
-   **Attention!** It is not a ``UART`` connector used for printf output. It is a connector used by custom boot loader.  
-2. Press ``BTN1`` on Pmod ESP32.  
-3. Press the ``Erase`` button on the tool to erase the unwanted data on the flash. The green area labeled ``IDLE`` in the tool changes to ``FINISH`` when finished.  
-4. Press ``BTN1`` on Pmod ESP32.  
-5. Press the ``START`` button on the tool to start writing. The green area labeled ``IDLE`` in the tool changes to ``FINISH`` when finished.  
+## How to update ESP32 firmware to "AT version:1.1.3.0"
+Please refer to the following.  
+https://github.com/d-kato/esp32-at-ble-stack
 
 
 ## Known issues

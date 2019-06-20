@@ -16,15 +16,29 @@ The following samples that operate in the peripheral role also work. Replace the
 ## Requirements
 The following targets have been tested and work with these examples:
 
-- [RZ/A2M Evaluation Board Kit](https://www.renesas.com/jp/en/products/software-tools/boards-and-kits/eval-kits/rz-a2m-evaluation-board-kit.html)
+- [RZ/A2M Evaluation Board Kit](https://www.renesas.com/jp/en/products/software-tools/boards-and-kits/eval-kits/rz-a2m-evaluation-board-kit.html)  
   - [Pmod ESP32](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/)  
     Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
     ![](docs/img/Pmod_ESP32_img.jpg)  
     ![](docs/img/Pmod_ESP32_connection.png)  
 
 
-- [SBEV-RZ/A2M](http://www.shimafuji.co.jp/products/1486) or [SEMB1402](http://www.shimafuji.co.jp/products/1505)
+- [SBEV-RZ/A2M](http://www.shimafuji.co.jp/products/1486)  
   - IoT-Engine WIFI ESP32 (SEMB1401-1)  
+
+
+- [SEMB1402](http://www.shimafuji.co.jp/products/1505)  
+  - IoT-Engine WIFI ESP32 (SEMB1401-1)  
+
+
+- [GR-LYCHEE](https://os.mbed.com/platforms/Renesas-GR-LYCHEE/)  
+  - It is equipped with ESP32.  
+    Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
+
+
+- [GR-PEACH](https://os.mbed.com/platforms/Renesas-GR-PEACH/)  
+  - [GR-PEACH Wireless CAMERA Shield](https://www.core.co.jp/product/m2m/gr-peach/audio-camera.html)  
+    Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
 
 
 The sample application can be seen on any BLE scanner on a smartphone. If you don't have a scanner on your phone, please install:

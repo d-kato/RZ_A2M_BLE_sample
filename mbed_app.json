@@ -41,7 +41,18 @@
         },
         "RZ_A2M_EVB": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
+            "target.features_add"    : ["BLE"],
+            "target.extra_labels_add": ["ESP32AT_BLE"],
+            "esp32.wifi-en" : "P6_1",
+            "esp32.wifi-tx" : "P6_3",
+            "esp32.wifi-rx" : "P6_2",
+            "esp32.provide-default": true,
+            "esp32.wifi-baudrate":400000
+        },
+        "RZ_A2M_EVB_HF": {
+            "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_HF_boot.bin",
+            "target.app_offset"     : "0x40000",
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"],
             "esp32.wifi-en" : "P6_1",
@@ -52,7 +63,7 @@
         },
         "RZ_A2M_SBEV": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_SBEV_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
             "target.macros_add"     : ["OVERRIDE_CONSOLE_USBSERIAL"],
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"],
@@ -66,7 +77,7 @@
         },
         "SEMB1402": {
             "target.bootloader_img" : "bootloader_d_n_d/SEMB1402_boot.bin",
-            "target.app_offset"     : "0x20000",
+            "target.app_offset"     : "0x40000",
             "target.macros_add"     : ["OVERRIDE_CONSOLE_USBSERIAL"],
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"],

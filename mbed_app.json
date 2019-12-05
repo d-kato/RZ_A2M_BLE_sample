@@ -39,6 +39,17 @@
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"]
         },
+        "GR_MANGO": {
+            "target.bootloader_img" : "bootloader_d_n_d/GR_MANGO_boot.bin",
+            "target.app_offset"     : "0x40000",
+            "target.features_add"    : ["BLE"],
+            "target.extra_labels_add": ["ESP32AT_BLE"],
+            "esp32.wifi-en" : "P4_0",
+            "esp32.wifi-tx" : "P4_2",
+            "esp32.wifi-rx" : "P4_1",
+            "esp32.provide-default": true,
+            "esp32.wifi-baudrate":400000
+        },
         "RZ_A2M_EVB": {
             "target.bootloader_img" : "bootloader_d_n_d/RZ_A2M_EVB_boot.bin",
             "target.app_offset"     : "0x40000",

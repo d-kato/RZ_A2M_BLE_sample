@@ -26,8 +26,7 @@
         "*": {
             "platform.stdio-baud-rate": 115200,
             "platform.stdio-convert-newlines": true,
-            "target.macros_add": ["MBED_CONF_APP_MAIN_STACK_SIZE=8192",
-                                  "LCD_SIZE=SD_7INCH"],
+            "target.macros_add": ["MBED_CONF_APP_MAIN_STACK_SIZE=8192"],
             "ble_button_pin_name": "USER_BUTTON0"
         },
         "RZ_A1H": {
@@ -40,8 +39,6 @@
             "target.extra_labels_add": ["ESP32AT_BLE"]
         },
         "GR_MANGO": {
-            "target.bootloader_img" : "bootloader_d_n_d/GR_MANGO_boot.bin",
-            "target.app_offset"     : "0x40000",
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"],
             "esp32.wifi-en" : "P4_0",

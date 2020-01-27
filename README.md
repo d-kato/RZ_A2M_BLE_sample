@@ -19,6 +19,12 @@ The following samples that operate in the peripheral role also work. Replace the
 ## Requirements
 The following targets have been tested and work with these examples:
 
+- GR-MANGO beta version
+  - [Pmod ESP32](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/)  
+    ![](docs/img/Pmod_ESP32_gr-mango_img.jpg)  
+    ![](docs/img/Pmod_ESP32_connection_gr-mango.png)  
+
+
 - [RZ/A2M Evaluation Board Kit](https://www.renesas.com/jp/en/products/software-tools/boards-and-kits/eval-kits/rz-a2m-evaluation-board-kit.html) (RZ/A2M)  
   - [Pmod ESP32](https://store.digilentinc.com/pmod-esp32-wireless-communication-module/)  
     Please update ESP32 FW ``AT version:1.1.3.0`` or later.  
@@ -52,6 +58,7 @@ The sample application can be seen on any BLE scanner on a smartphone. If you do
 
 
 ## About custom boot loaders
+**<font color="Red">Attention! When using GR-MANGO, please use DAPLink without using a custom boot loader.</font>**  
 This sample uses a custom boot loader, and you can drag & drop the "xxxx_application.bin" file to write the program.  
 
 1. Hold down ``SW3 (UB0)`` and press the reset button. (Or turn on the power.)  

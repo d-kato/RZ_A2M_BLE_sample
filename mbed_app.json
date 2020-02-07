@@ -39,6 +39,8 @@
             "target.extra_labels_add": ["ESP32AT_BLE"]
         },
         "GR_MANGO": {
+            "target.bootloader_img" : "bootloader_d_n_d/GR_MANGO_boot.bin",
+            "target.app_offset"     : "0x11000",
             "target.features_add"    : ["BLE"],
             "target.extra_labels_add": ["ESP32AT_BLE"],
             "esp32.wifi-en" : "P4_0",
